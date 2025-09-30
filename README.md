@@ -1,73 +1,50 @@
-# React + TypeScript + Vite
+Amezay AI Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Amezay AI, güvenilir yapay zekayı kullanıcılarla buluşturan modern bir web uygulamasıdır. Bu proje, kurumsal yapay zeka çözümleri, ürün fiyatlandırması, blog içerikleri ve canlı AI chat deneyimi sunar.
+React + Vite + Tailwind CSS ile geliştirilmiştir ve tamamen responsive, kullanıcı dostu bir arayüz sağlar.
 
-Currently, two official plugins are available:
+🚀 Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Modern Arayüz: Light/Dark mod desteği ile şık ve kullanıcı dostu tasarım.
 
-## React Compiler
+Çoklu Sayfalar:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ana Sayfa
 
-## Expanding the ESLint configuration
+Kurumsal: About, Ecosystem, Careers, Investors
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Çözümler (Solutions)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Fiyatlandırma (Pricing)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Blog
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+AI Chat
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Yapay Zeka Chat: Canlı kullanıcı deneyimi simülasyonu, giriş yap butonuyla AI chat’e yönlendirme.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Çoklu Dil Desteği (TR/EN): Kullanıcıların dilleri kolayca değiştirmesi.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Responsive Tasarım: Tüm cihazlarda uyumlu, mobil-first yaklaşımı.
+
+Tailwind CSS ile Temiz Kod: Hızlı, esnek ve maintainable frontend.
+
+💻 Teknolojiler
+
+Frontend: React, TypeScript, Tailwind CSS, React Router DOM
+
+State Management: React Context API (Dark/Light Mode & Language Context)
+
+Build Tool: Vite
+
+Versiyon Kontrol: Git / GitHub
+
+📂 Proje Yapısı
+src/
+│
+├─ assets/         # Logo, resimler ve ikonlar
+├─ components/     # Header, Footer, Layout, menü vs.
+├─ context/        # Dark/Light mode & Language context
+├─ pages/          # Home, About, Solutions, Pricing, Blog, ChatPages vb.
+├─ App.tsx         # Ana router ve uygulama yapısı
+└─ main.tsx        # Vite giriş dosyası
